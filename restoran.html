@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restoran Menyusi</title>
+    <style>
+        /* Orqa fon */
+        
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: linear-gradient(to right, #ff9966, #ff5e62);
+            color: white;
+            margin: 0;
+            padding: 20px;
+        }
+        /* Restoran nomi */
+        
+        h1 {
+            color: #fff;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+        /* Bo'lim sarlavhalari */
+        
+        h2 {
+            color: #f8f8f8;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+        /* Menyu bloki */
+        
+        .menu-item {
+            background: rgba(255, 255, 255, 0.2);
+            display: inline-block;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        /* Taom rasmlari */
+        
+        .menu-item img {
+            border-radius: 10px;
+        }
+        /* Buyurtma tugmasi */
+        
+        button {
+            background-color: #ffcc00;
+            color: black;
+            padding: 12px 24px;
+            border: none;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+            transition: 0.3s;
+        }
+        
+        button:hover {
+            background-color: #ffaa00;
+            box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Restoran nomi -->
+    <h1>🍽️ Bizning Restoran</h1>
+
+    <!-- Menyu bo'limi -->
+    <h2>📜 Menyu</h2>
+
+    <!-- Taomlar -->
+    <div class="menu-item">
+        <h3>🍕 Pizza</h3>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Supreme_pizza.jpg" alt="Pizza" width="150">
+        <p>Narxi: 50 000 so‘m</p>
+    </div>
+
+    <div class="menu-item">
+        <h3>🍔 Burger</h3>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Cheeseburger.jpg" alt="Burger" width="150">
+        <p>Narxi: 35 000 so‘m</p>
+    </div>
+
+    <div class="menu-item">
+        <h3>🍣 Sushi</h3>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/Sushi_platter.jpg" alt="Sushi" width="150">
+        <p>Narxi: 60 000 so‘m</p>
+    </div>
+
+    <hr>
+
+    <!-- Yetkazib berish (dastavka) xizmati -->
+    <h2>🚚 Yetkazib Berish Xizmati</h2>
+    <p>Bizning tezkor yetkazib berish xizmatimizdan foydalaning! Buyurtmangizni 30 daqiqada yetkazib beramiz.</p>
+
+    <form>
+        <label for="name">👤 Ismingiz:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="address">📍 Manzil:</label><br>
+        <input type="text" id="address" name="address" required><br><br>
+
+        <label for="phone">📞 Telefon raqamingiz:</label><br>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label for="order">🍽️ Buyurtma:</label><br>
+        <select id="order" name="order">
+            <option value="pizza">Pizza</option>
+            <option value="burger">Burger</option>
+            <option value="sushi">Sushi</option>
+        </select><br><br>
+
+        <button type="submit">✅ Buyurtma Berish</button>
+    </form>
+
+</body>
+
+</html>
